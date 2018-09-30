@@ -1,0 +1,28 @@
+<div class="card">
+  	<div class="card-body">
+	  	<form>
+		  <div class="form-group">
+		    <label for="name">Nombre de la pelicula</label>
+		    <input type="text" class="form-control" [(ngModel)]="movie.name" name="name" placeholder="Nombre de la pelicula">
+		  </div>
+		  <div class="form-group">
+		    <label for="genero">Genero</label>
+		    <input type="text" class="form-control" [(ngModel)]="movie.genre" name="genero" placeholder="Genero">
+		  </div>
+		  <div class="form-group">
+		    <label for="amo">Año</label>
+		    <input type="text" class="form-control" [(ngModel)]="movie.year" name="amo" placeholder="Año">
+		  </div>
+		  <div class="form-group">
+		    <label for="duration">Duracion</label>
+		    <input type="text" class="form-control" [(ngModel)]="movie.duration" name="duration" placeholder="Duracion">
+		  </div>
+		  <div class="form-group">
+		    <textarea name="Descripcion" [(ngModel)]="movie.description" class="form-control" rows="7" placeholder="Descripción de la pelicula"></textarea>
+		  </div>
+		  <div class="text-center">
+		  	<button class="btn btn-primary" (click)="save()" type="button" style="margin-right: 9px;">Guardar pelicula</button>  <button class="btn btn-secondary" type="button" routerLink="/">Cancelar</button>
+		  </div>
+		</form>
+	</div>
+</div>

@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+body,input,textarea{
+	background: #354452 !important;
+	color: #EFEFEF !important;
+}
+.card,input,textarea{
+	border: solid 1px #7770a0 !important;
+}
+.card-body{
+	background: #2e5579 !important;
+}
