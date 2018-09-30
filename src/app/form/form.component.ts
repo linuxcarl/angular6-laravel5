@@ -42,7 +42,6 @@ export class FormComponent implements OnInit {
 			this.moviesService.put(this.movie)
 				.subscribe(
 					(res)=>{
-						console.log(res);
 						this.router.navigate(['home']);
 					},(e)=>{
 
@@ -51,7 +50,6 @@ export class FormComponent implements OnInit {
 			this.moviesService.save(this.movie)
 				.subscribe(
 					(dat)=>{
-						console.log(dat);
 						this.router.navigate(['home']);
 					},(e)=>{
 						console.log(e);

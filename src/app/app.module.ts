@@ -10,7 +10,7 @@ import { FormComponent } from './form/form.component';
 import { HomeComponent,ModalDeleteComponent } from './home/home.component';
 import { LayoutsComponent } from './layouts/layouts.component';
 //routers
-const Routes: Routes = [
+const Routs: Routes = [
   {
     path: '',
     component: AppComponent,
@@ -44,7 +44,7 @@ const Routes: Routes = [
     HttpClientModule,
     FormsModule,
     NgbModule,
-    RouterModule.forRoot(Routes)
+    RouterModule.forRoot(Routs)
   ],
   providers: [],
   bootstrap: [AppComponent]
